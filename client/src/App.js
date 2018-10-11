@@ -5,16 +5,10 @@ import API from "./utils/API"
 
 class App extends Component {
   
-  ossAuth = () => {
-    API.ossAuthorization()
-    .then(res => console.log(res))
-    .catch(error => console.log("You are doing great!"))
+  componentDidMount(){
+    API.ossAuth();
   }
 
-  componentDidMount(){
-    this.ossAuth();
-  }
-  
   render() {
     return (
       <div className="App">
