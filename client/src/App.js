@@ -4,16 +4,6 @@ import "./App.css";
 import API from "./utils/API"
 
 class App extends Component {
-  
-  ossAuthentication =() => {
-    API.ossAuth()
-    .then(res => console.log(res))
-    .catch(error => console.log(error))
-  }
-
-  componentDidMount(){
-    this.ossAuthentication();
-  }
 
   render() {
     return (
